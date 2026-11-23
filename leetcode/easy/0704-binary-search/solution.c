@@ -1,7 +1,9 @@
 
-int search(int* nums, int numsSize, int target) {
+#include <stdio.h>
+
+int search(int nums[], int n, int target) {
     int low = 0;
-    int high = numsSize - 1;
+    int high = n - 1;
 
     while (low <= high) {
         int mid = low + (high - low) / 2;
@@ -19,3 +21,6 @@ int search(int* nums, int numsSize, int target) {
 
     return -1;
 }
+
+
+
