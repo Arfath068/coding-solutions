@@ -43,14 +43,16 @@ Explanation: 2 does not exist in nums so return -1
 
 **Language:** C  
 **Runtime:** 0 ms (beats 100.00%)  
-**Memory:** 9.9 MB (beats 48.68%)  
-**Submitted:** 2026-11-21T06:28:50.693Z  
+**Memory:** 9.8 MB (beats 87.76%)  
+**Submitted:** 2026-11-23T10:11:37.847Z  
 
 ```c
 
-int search(int* nums, int numsSize, int target) {
+#include <stdio.h>
+
+int search(int nums[], int n, int target) {
     int low = 0;
-    int high = numsSize - 1;
+    int high = n - 1;
 
     while (low <= high) {
         int mid = low + (high - low) / 2;
@@ -68,6 +70,9 @@ int search(int* nums, int numsSize, int target) {
 
     return -1;
 }
+
+
+
 
 ```
 
